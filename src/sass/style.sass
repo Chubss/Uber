@@ -166,10 +166,11 @@ h1, h2, h3, h4, h5, h6, p
     color: #FFFFFF
     border: none
     cursor: pointer
+    line-height: 27px
+
     &_white
         background-color: #ffffff
         color: #000
-        line-height: 27px
         text-decoration: underline
 .title
     font-weight: 700
@@ -276,7 +277,54 @@ h1, h2, h3, h4, h5, h6, p
         line-height: 24px
         text-align: center
         color: #222222
-            
+.require
+    min-width: 917px
+    padding: 66px 0 54px
+    &_block
+        margin: 33px 0
+        &_nmb
+            margin-bottom: 0
+    &_header
+        font-family: 'Roboto'
+        font-style: normal
+        font-weight: 400
+        font-size: 22px
+        color: #1CA8C3
+    &_list
+        padding-left: 50px
+        list-style-type: none
+        margin-top: 10px
+        font-weight: 300
+        font-size: 17px
+        color: #222222
+        max-width: 480px
+    &_items
+        position: relative
+        margin-top: 3px
+        &::before
+            content: ""
+            background: url("../icons/check/check_green.png") center center / cover no-repeat
+            position: absolute
+            display: block
+            width: 21px
+            height: 20px
+            top: 4px
+            left: -32px
+
+    &_subheader
+        font-weight: 300
+        font-size: 17px
+        color: #1CA8C3
+        max-width: 480px
+        margin-top: 25px
+    .warning
+        .require_header
+            color: #FF5656
+        .require_items
+            &::before
+                background: url("../icons/check/check_red.png") center center / cover no-repeat
+
+
 
 
 
