@@ -166,6 +166,11 @@ h1, h2, h3, h4, h5, h6, p
     color: #FFFFFF
     border: none
     cursor: pointer
+    &_white
+        background-color: #ffffff
+        color: #000
+        line-height: 27px
+        text-decoration: underline
 .title
     font-weight: 700
     font-size: 38px
@@ -173,15 +178,22 @@ h1, h2, h3, h4, h5, h6, p
     text-transform: uppercase
     color: #222222
     margin-top: 32px
+    &_white
+        color: #FFFFFF
+        z-index: 2
 .subtitle
     font-weight: 400
     font-size: 17px
     text-align: center
     color: #222222
     margin-top: 1px
+    &_white
+        color: #FFFFFF
+        
 .mobile
     min-height: 860px
     padding: 46px 0 80px
+    background: url("../img/bg/mobile_bg.jpg") center center / cover no-repeat 
     .row
         margin-top: 11px
     &_lable
@@ -239,6 +251,32 @@ h1, h2, h3, h4, h5, h6, p
             top: 50%
             left: 50%
             transform: translate(-50%, -50%)
+.choice
+    position: relative
+    min-height: 898px
+    padding: 57px 0 137px
+    background: url("../img/bg/mobile_bg.jpg") center center / cover no-repeat
+    z-index: 3
+    &_black
+        position: absolute
+        height: 502px
+        left: 0
+        top: 0
+        width: 100%
+        background-color: #070716
+        z-index: -1
+    &_img
+        display: block
+        margin: 0 auto
+        z-index: 10
+        margin-top: 54px
+    &_descr
+        font-weight: 300
+        font-size: 17px
+        line-height: 24px
+        text-align: center
+        color: #222222
+            
 
 
 
