@@ -8,7 +8,7 @@
         &_header
             font-size: 50px
     .reason
-        &_item
+        // &_item
 
         &_descr
             max-width: 300px
@@ -74,12 +74,23 @@
 /* =================768========================= */
 @media ( max-width: 767.98px )
     .subheader
-        &_call
+        &_official
             display: none
+        &_button
+            width: 150px
+            height: 28px
+            font-weight: 400
+            font-size: 10px
+            line-height: 22px
+            margin: 0 auto   
+            margin-top: 10px         
         &_number
-            display: none
+            font-weight: 400
+            font-size: 16px
+            text-align: center
+            margin-top: 10px
     .menu
-
+        
         &_items
             position: fixed
             display: flex
@@ -103,3 +114,59 @@
                 font-size: 20px
                 &:hover
                     color: #6f6ec0
+    .hamburger
+        display: block
+        position: absolute
+        right: 11px
+        top: 50%
+        transform: translateY(-50%)
+        width: 26px
+        height: 10px
+        span
+            display: block
+            height: 2px
+            background-color: #FFFFFF
+            margin-bottom: 2px
+            transition: all .3s
+            &:last-child
+                margin-bottom: 0
+        &_active
+            span
+                margin-bottom: -2px
+                &:nth-child(1)
+                    transform: translateY(3px) rotate(-45deg) 
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform: translateY(3px) rotate(45deg)
+    .promo
+        padding-bottom: 50px
+        &_header
+            line-height: 45px
+        // &_subheader
+        //     font-size: 30px
+    .xs-hide
+        display: none
+    .xs-visible
+        display: block
+/* =================576========================= */
+@media ( max-width: 575.98px )
+    @media ( max-width: 767.98px )
+    .subheader
+        height: 60px
+        &_button
+            width: 116px
+            height: 22px
+            font-weight: 400
+            font-size: 10px
+            line-height: 22px
+            margin: 0 auto   
+            margin-top: 10px         
+        &_number
+            font-weight: 400
+            font-size: 12px
+            text-align: center
+            margin-top: 10px
+    .menu
+        &_items
+            width: 85%
